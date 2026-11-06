@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>Text editor</title>
+
+  <defs>
+    <linearGradient id="starkPlate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26282E"/>
+      <stop offset="1" stop-color="#18191D"/>
+    </linearGradient>
+  </defs>
+
+  <g id="background">
+    <rect x="8" y="8" width="240" height="240" rx="52" fill="#18191D"/>
+    <rect x="8" y="8" width="240" height="240" rx="52" fill="url(#starkPlate)"/>
+  </g>
+
+  <g id="surface">
+    <rect x="48" y="40" width="116" height="176" rx="18" fill="#EBE8E2"/>
+  </g>
+
+  <g id="frame">
+    <rect x="12" y="12" width="232" height="232" rx="48" fill="none" stroke="#343842" stroke-width="4"/>
+    <rect x="48" y="40" width="116" height="176" rx="18" fill="none" stroke="#343842" stroke-width="4"/>
+  </g>
+
+  <g id="symbol">
+    <g fill="#343842">
+      <rect x="70" y="74" width="72" height="11" rx="5.5"/>
+      <rect x="70" y="104" width="72" height="11" rx="5.5"/>
+      <rect x="70" y="134" width="72" height="11" rx="5.5"/>
+      <rect x="70" y="164" width="44" height="11" rx="5.5"/>
+    </g>
+  </g>
+
+  <g id="accent">
+    <path d="M 150 196 L 204 142" stroke="#D6A84E" stroke-width="26"
+          stroke-linecap="round"/>
+    <path d="M 196 134 L 212 150" stroke="#B3272D" stroke-width="26"
+          stroke-linecap="round"/>
+  </g>
+
+  <g id="highlight">
+    <path d="M 58 14 H 198" stroke="#EBE8E2" stroke-width="4" stroke-linecap="round" opacity="0.1"/>
+  </g>
+</svg>

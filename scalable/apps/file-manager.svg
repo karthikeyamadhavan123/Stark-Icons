@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>File manager</title>
+
+  <defs>
+    <linearGradient id="starkPlate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26282E"/>
+      <stop offset="1" stop-color="#18191D"/>
+    </linearGradient>
+  </defs>
+
+  <g id="background">
+    <rect x="8" y="8" width="240" height="240" rx="52" fill="#18191D"/>
+    <rect x="8" y="8" width="240" height="240" rx="52" fill="url(#starkPlate)"/>
+  </g>
+
+  <g id="surface">
+    <path d="M 56 64 h 46 a 14 14 0 0 1 11 6 l 13 18 h 74 a 18 18 0 0 1 18 18 v 86
+             a 18 18 0 0 1 -18 18 H 56 a 18 18 0 0 1 -18 -18 V 82 a 18 18 0 0 1 18 -18 z"
+          fill="#343842"/>
+  </g>
+
+  <g id="frame">
+    <rect x="12" y="12" width="232" height="232" rx="48" fill="none" stroke="#343842" stroke-width="4"/>
+  </g>
+
+  <g id="symbol">
+    <rect x="70" y="138" width="116" height="13" rx="6.5" fill="#EBE8E2"/>
+    <rect x="70" y="166" width="74" height="13" rx="6.5" fill="#A5A9B2"/>
+  </g>
+
+  <g id="accent">
+    <path d="M 38 110 h 180 v 10 a 0 0 0 0 1 0 0 H 38 z" fill="#D6A84E"/>
+  </g>
+
+  <g id="highlight">
+    <path d="M 58 14 H 198" stroke="#EBE8E2" stroke-width="4" stroke-linecap="round" opacity="0.1"/>
+  </g>
+</svg>

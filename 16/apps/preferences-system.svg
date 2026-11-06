@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>Settings</title>
+
+  <defs>
+    <linearGradient id="starkPlate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26282E"/>
+      <stop offset="1" stop-color="#18191D"/>
+    </linearGradient>
+  </defs>
+
+  <g id="background">
+    <rect x="8" y="8" width="240" height="240" rx="52" fill="#18191D"/>
+    <rect x="8" y="8" width="240" height="240" rx="52" fill="url(#starkPlate)"/>
+  </g>
+
+  <g id="surface">
+    <circle cx="128" cy="128" r="84" fill="#26282E"/>
+  </g>
+
+  <g id="frame">
+    <rect x="12" y="12" width="232" height="232" rx="48" fill="none" stroke="#343842" stroke-width="4"/>
+  </g>
+
+  <g id="symbol">
+    <g fill="#A5A9B2">
+      <rect x="116" y="40" width="24" height="34" rx="12"/>
+      <rect x="116" y="40" width="24" height="34" rx="12" transform="rotate(45 128 128)"/>
+      <rect x="116" y="40" width="24" height="34" rx="12" transform="rotate(90 128 128)"/>
+      <rect x="116" y="40" width="24" height="34" rx="12" transform="rotate(135 128 128)"/>
+      <rect x="116" y="40" width="24" height="34" rx="12" transform="rotate(180 128 128)"/>
+      <rect x="116" y="40" width="24" height="34" rx="12" transform="rotate(225 128 128)"/>
+      <rect x="116" y="40" width="24" height="34" rx="12" transform="rotate(270 128 128)"/>
+      <rect x="116" y="40" width="24" height="34" rx="12" transform="rotate(315 128 128)"/>
+    </g>
+    <circle cx="128" cy="128" r="68" fill="#A5A9B2"/>
+    <circle cx="128" cy="128" r="38" fill="#18191D"/>
+  </g>
+
+  <g id="accent">
+    <circle cx="128" cy="128" r="38" fill="none" stroke="#D6A84E" stroke-width="10"/>
+  </g>
+
+  <g id="highlight">
+    <path d="M 58 14 H 198" stroke="#EBE8E2" stroke-width="4" stroke-linecap="round" opacity="0.1"/>
+  </g>
+</svg>

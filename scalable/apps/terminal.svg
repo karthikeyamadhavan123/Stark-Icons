@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>Terminal</title>
+
+  <defs>
+    <linearGradient id="starkPlate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26282E"/>
+      <stop offset="1" stop-color="#18191D"/>
+    </linearGradient>
+  </defs>
+
+  <g id="background">
+    <rect x="8" y="8" width="240" height="240" rx="52" fill="#18191D"/>
+    <rect x="8" y="8" width="240" height="240" rx="52" fill="url(#starkPlate)"/>
+  </g>
+
+  <g id="surface">
+    <rect x="40" y="56" width="176" height="144" rx="26" fill="#18191D"/>
+  </g>
+
+  <g id="frame">
+    <rect x="12" y="12" width="232" height="232" rx="48" fill="none" stroke="#343842" stroke-width="4"/>
+    <rect x="40" y="56" width="176" height="144" rx="26" fill="none" stroke="#343842" stroke-width="4"/>
+  </g>
+
+  <g id="symbol">
+    <path d="M 76 98 L 110 128 L 76 158" fill="none" stroke="#EBE8E2" stroke-width="20"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g id="accent">
+    <rect x="128" y="142" width="56" height="16" rx="8" fill="#D6A84E"/>
+  </g>
+
+  <g id="highlight">
+    <path d="M 58 14 H 198" stroke="#EBE8E2" stroke-width="4" stroke-linecap="round" opacity="0.1"/>
+  </g>
+</svg>

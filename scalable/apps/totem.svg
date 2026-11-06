@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <title>Media player</title>
+
+  <defs>
+    <linearGradient id="starkPlate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26282E"/>
+      <stop offset="1" stop-color="#18191D"/>
+    </linearGradient>
+  </defs>
+
+  <g id="background">
+    <rect x="8" y="8" width="240" height="240" rx="52" fill="#18191D"/>
+    <rect x="8" y="8" width="240" height="240" rx="52" fill="url(#starkPlate)"/>
+  </g>
+
+  <g id="surface">
+    <circle cx="128" cy="128" r="66" fill="#26282E"/>
+  </g>
+
+  <g id="frame">
+    <rect x="12" y="12" width="232" height="232" rx="48" fill="none" stroke="#343842" stroke-width="4"/>
+    <circle cx="128" cy="128" r="66" fill="none" stroke="#343842" stroke-width="4"/>
+    <circle cx="128" cy="128" r="90" fill="none" stroke="#343842" stroke-width="10"/>
+  </g>
+
+  <g id="symbol">
+    <path d="M 112 96 L 112 160 L 164 128 Z" fill="#EBE8E2" stroke="#EBE8E2"
+          stroke-width="14" stroke-linejoin="round"/>
+  </g>
+
+  <g id="accent">
+    <path d="M 128 38 A 90 90 0 0 1 218 128" fill="none" stroke="#D6A84E" stroke-width="10"
+          stroke-linecap="round"/>
+    <circle cx="218" cy="128" r="11" fill="#55DEE0"/>
+  </g>
+
+  <g id="highlight">
+    <path d="M 58 14 H 198" stroke="#EBE8E2" stroke-width="4" stroke-linecap="round" opacity="0.1"/>
+  </g>
+</svg>
