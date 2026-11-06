@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+     shape-rendering="geometricPrecision">
+  <title>Stark Hybrid Arrow — left_ptr</title>
+  <desc>Default pointer for Stark Cursor. Hotspot at (2, 2) on a 32px canvas.</desc>
+
+  <!-- Body: Graphite fill, Bone visibility outline -->
+  <path d="M3 3 L3 26 L10 19 L15 29 L20 27 L15 17 L24 17 Z"
+        fill="#18191D"
+        stroke="#EBE8E2"
+        stroke-width="1.5"
+        stroke-linejoin="round"
+        stroke-linecap="round"/>
+
+  <!-- Stark Gold leading-edge accent -->
+  <path d="M4.8 4.9 L19.5 14.6"
+        fill="none" stroke="#D6A84E" stroke-width="0.9" stroke-linecap="round"/>
+</svg>

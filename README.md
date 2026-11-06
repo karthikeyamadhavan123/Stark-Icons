@@ -3,6 +3,9 @@
 **An industrial icon theme for Linux desktops. Graphite surfaces, gold accents,
 built to sit beside [Stark Mint](https://github.com/karthikeyamadhavan123/stark-mint-theme).**
 
+This repository also ships **Stark Cursors**, a matching pointer theme — see
+[Cursor theme](#cursor-theme).
+
 Stark Icons is an adaptation of
 [Dracula Icons](https://github.com/m4thewz/dracula-icons) by Matheus Vitor. It
 keeps that theme's full coverage — around 25,000 files across apps, mimetypes,
@@ -11,7 +14,7 @@ signature desktop icons with original artwork in the Stark palette.
 
 Most of what you see is still upstream work. See [Credits](#credits).
 
-## GPL-3.0
+**GPL-3.0**
 
 ---
 
@@ -97,6 +100,61 @@ Zip flattens symlinks, and some graphical archivers silently skip the five
 
 ---
 
+## Cursor theme
+
+`Stark-Cursors/` is a separate pointer theme that lives in this repository but
+installs to its own directory.
+
+> **It must be copied out of the icon theme folder.** Cursor themes are only
+> found at `~/.icons/<name>/index.theme`. Left inside `Stark-Icons/`, it sits
+> one level too deep and will not appear in your settings.
+
+```bash
+cp -r ~/.icons/Stark-Icons/Stark-Cursors ~/.icons/
+```
+
+Then **Themes → Mouse Pointer → Stark Cursors**. Log out and back in — cursor
+themes are read once at session start.
+
+### What is in it
+
+| Path               | Contents                                                                    |
+| ------------------ | --------------------------------------------------------------------------- |
+| `cursors/left_ptr` | The default pointer, built at 24, 32, 48, 64 and 96px                       |
+| `cursors/*`        | Alias symlinks, including the two hash-named ones some applications request |
+| `left_ptr.svg`     | Editable source                                                             |
+| `build_cursor.py`  | Builds the XCursor binary from the SVG                                      |
+| `index.theme`      | Inherits Adwaita for every shape not yet drawn                              |
+
+The pointer is graphite with a bone outline, so it stays visible on dark,
+light and mid-grey backgrounds, with a gold leading edge. Hotspot is at the
+tip and scales with size.
+
+### Rebuilding after editing the SVG
+
+```bash
+cd Stark-Cursors
+python3 build_cursor.py left_ptr.svg cursors/left_ptr 2 2 32 24 32 48 64 96
+```
+
+Arguments are: source SVG, output path, hotspot x, hotspot y, the SVG's canvas
+size, then the pixel sizes to render. The hotspot is scaled for each size
+automatically. Requires `cairosvg` and `pillow`.
+
+A deprecation warning from Pillow about `getdata` is expected and harmless.
+
+### Status
+
+One pointer so far, out of roughly forty shapes a complete theme uses.
+`Inherits=Adwaita` means everything not yet drawn falls back to Adwaita, so
+nothing breaks — but you will see Adwaita's I-beam over text fields and its
+resize arrows at window edges.
+
+Next in order of how often they appear: `xterm` (text), `hand2` (links),
+`watch` (busy), then the eight resize arrows.
+
+---
+
 ## What is different
 
 Eight files carry original Stark artwork. Everything else is upstream.
@@ -135,6 +193,7 @@ recognition without making the desktop more coherent.
 | [DESIGN.md](./DESIGN.md)               | Design philosophy, palette rules, construction, when to redraw an icon and when not to |
 | [STARK-CHANGES.md](./STARK-CHANGES.md) | Every modified file, why it changed, what was left untouched                           |
 | [CONTRIBUTING.md](./CONTRIBUTING.md)   | How to contribute, and the symlink rules                                               |
+| `Stark-Cursors/`                       | The matching pointer theme — see [Cursor theme](#cursor-theme)                         |
 
 Read `DESIGN.md` before drawing anything.
 
